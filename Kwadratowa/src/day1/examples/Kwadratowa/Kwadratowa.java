@@ -33,8 +33,8 @@ public class Kwadratowa {
 				} else {
 					double x_r, x_i;
 					delta=-delta;
-					x_r=-b/2;
-					x_i=Math.sqrt(delta)/2;
+					x_r=-b/2*a;
+					x_i=Math.sqrt(delta)/2*a;
 					System.out.println("F.kwadratowa posiada dwa pierwiastki zespolone:\nx1= " + x_r + "+" + x_i + "i" + "\nx2= " + x_r + "-" + x_i + "i");
 				}
 			} else { // liniowa
