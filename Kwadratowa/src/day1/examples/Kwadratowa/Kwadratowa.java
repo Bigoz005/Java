@@ -16,21 +16,26 @@ public class Kwadratowa {
 
 			if (a != 0) // kwadratowa
 			{
-				double x1, x2;
 				delta = b * b - 4 * a * c;
-				System.out.println("delta=" + delta);
+				System.out.println("delta= " + delta);
 
 				if (delta > 0) // +delta -b+pier.delta/2a -b-pier.delta/2a
 				{
+					double x1, x2;
 					x1 = (Math.sqrt(delta) - b) / 2 * a;
 					x2 = (-Math.sqrt(delta) - b) / 2 * a;
 					System.out
-							.println("F.kwadratowa z dodatnia delta, z dwoma pierwiastkami: x1=" + x1 + " i x2=" + x2);
-				} else if (delta == 0) { // delta=0 -b/2a
-					x1 = (-b) / 2 * a;
-					System.out.println("F.kwadratowa z podwojnym pierwiastkiem: x=" + x1);
+							.println("F.kwadratowa z dodatnia delta, z dwoma pierwiastkami:\nx1= " + x1 + "\nx2= " + x2);
+				} else if (delta == 0) {// delta=0 -b/2a
+					double x;
+					x = (-b) / 2 * a;
+					System.out.println("F.kwadratowa z podwojnym pierwiastkiem:\nx=" + x);
 				} else {
-					System.out.println("F.kwadratowa nie posiada pierwiastków");
+					double x_r, x_i;
+					delta=-delta;
+					x_r=-b/2;
+					x_i=Math.sqrt(delta)/2;
+					System.out.println("F.kwadratowa posiada dwa pierwiastki zespolone:\nx1= " + x_r + "+" + x_i + "i" + "\nx2= " + x_r + "-" + x_i + "i");
 				}
 			} else { // liniowa
 				double x;
