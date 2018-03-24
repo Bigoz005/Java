@@ -1,10 +1,8 @@
-package Substring;
-
 public class Substring {
 
 	public static void main(String[] args) {
 		if (args.length < 3) {
-			System.out.println("Za ma³o argumentów.");
+			System.out.println("Za maÂ³o argumentÃ³w.");
 			return;
 		}
 		try {
@@ -12,9 +10,9 @@ public class Substring {
 			int j = Integer.parseInt(args[2]);
 			System.out.println(args[0].substring(i, j + 1));
 		} catch (NumberFormatException error) {
-			System.out.println("Z³y format liczby: " + error.getLocalizedMessage());
+			System.out.println("ZÂ³y format liczby: " + error.getLocalizedMessage());
 		} catch (StringIndexOutOfBoundsException error) {
-			System.out.println("Nieprawid³owe indeksy: " + error.getLocalizedMessage());
+			System.out.println("NieprawidÂ³owe indeksy: " + error.getLocalizedMessage());
 		}
 	}
 }
