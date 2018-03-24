@@ -46,8 +46,8 @@ public class Kwadratowa {
 				x = (-c) / b;
 				System.out.println("F.liniowa: x=" + x);
 			}
-		} catch (NumberFormatException e) {
-			System.out.println("Zly format liczby: " + e.getLocalizedMessage());
+		} catch (NumberFormatException error) {
+			System.out.println("Zly format liczby: " + error.getLocalizedMessage());
 		}
 	}
 }
