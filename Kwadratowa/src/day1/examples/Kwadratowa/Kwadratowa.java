@@ -1,5 +1,3 @@
-package day1.examples.Kwadratowa;
-
 public class Kwadratowa {
 	public static void main(String[] args) {
 		if (args.length < 3) {
@@ -7,11 +5,11 @@ public class Kwadratowa {
 			return;
 		}
 		try {
-			Integer a, b, c;
+			int a, b, c;
 			double delta;
-			a = Integer.valueOf(args[0]);
-			b = Integer.valueOf(args[1]);
-			c = Integer.valueOf(args[2]);
+			a = Integer.parseInt(args[0]);
+			b = Integer.parseInt(args[1]);
+			c = Integer.parseInt(args[2]);
 			/*double a, b, c, delta;
 			a = Double.parseDouble(args[0]);
 			b = Double.parseDouble(args[1]);
