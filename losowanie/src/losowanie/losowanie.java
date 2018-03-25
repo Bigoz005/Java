@@ -13,28 +13,28 @@ public class losowanie {
 			int p = 0;
 			Scanner in = new Scanner(System.in);
 			for (;;) {
-				System.out.print("Podaj liczbê: ");
+				System.out.print("Podaj liczbÃª: ");
 				++p; // zwiekszenie wartosci przed wykonaniem operacji, zeby nie byloproby nr.0
 				int i = in.nextInt();
 				if (i == r) {
-					System.out.println("Poprawna odpowiedŸ. Liczba prób=" + p);
+					System.out.println("Poprawna odpowiedÅ¸. Liczba prÃ³b=" + p);
 					p = 0;
 					String c;
 					r = rand.nextInt(MAX_RAND + 1);
 					// System.out.println(r);
 					do {
-						System.out.println("Chcesz graæ dalej? [T/N] ");
+						System.out.println("Chcesz graÃ¦ dalej? [T/N] ");
 						c = in.next();
 						if (c.equalsIgnoreCase("N"))
 							return;
 					} while (!c.equalsIgnoreCase("T"));
 				} else if (i < r)
-					System.out.println("Za ma³o.");
+					System.out.println("Za maÂ³o.");
 				else
-					System.out.println("Za du¿o.");
+					System.out.println("Za duÂ¿o.");
 			}
-		} catch (NumberFormatException error) {
-			System.out.println("Z³y format liczby: " + error.getLocalizedMessage());
+		} catch (InputMismatchException error) {
+			System.out.println("ZÅ‚y format liczby. Error");
 		}
 	}
 }
