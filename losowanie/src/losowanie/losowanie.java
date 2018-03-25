@@ -1,5 +1,3 @@
-package losowanie;
-
 import java.util.*;
 
 public class losowanie {
