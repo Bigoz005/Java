@@ -1,5 +1,3 @@
-package zad6;
-
 import java.util.*;
 import java.util.Map.Entry;
 
@@ -17,11 +15,11 @@ public class zad6 {
 			wpis2.nr_tel = new NrTelefoniczny(44, 5237997);
 			phoneBook.put(wpis2.nr_tel, wpis2);
 
-			Firma wpis3 = new Firma("Serwis Rtv Agd", "¯ywiec");
+			Firma wpis3 = new Firma("Serwis Rtv Agd", "Â¯ywiec");
 			wpis3.nr_tel = new NrTelefoniczny(48, 535451974);
 			phoneBook.put(wpis3.nr_tel, wpis3);
 
-			Firma wpis4 = new Firma("Olsztyñskie Centrum Kszta³cenia", "Olsztyn");
+			Firma wpis4 = new Firma("OlsztyÃ±skie Centrum KsztaÂ³cenia", "Olsztyn");
 			wpis4.nr_tel = new NrTelefoniczny( 48, 468213151);
 			phoneBook.put(wpis4.nr_tel, wpis4);
 
