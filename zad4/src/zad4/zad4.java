@@ -1,5 +1,3 @@
-package zad4;
-
 import java.util.*;
 import java.io.*;
 import java.nio.*;
@@ -37,7 +35,7 @@ public class zad4 {
 			System.out.println(s2);
 		} catch(Exception e) {
 			System.out.println();
-			System.out.println(n + " B³¹d: " + e.getLocalizedMessage());
+			System.out.println(n + " BÂ³Â¹d: " + e.getLocalizedMessage());
 			System.out.println();
 		}
 	}
