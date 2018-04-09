@@ -1,5 +1,3 @@
-package zad5;
-
 import java.util.*;
 import java.io.*;
 
@@ -8,7 +6,7 @@ class WektoryRoznejDlugosciException extends Exception {
 	public int dlA, dlB;
 	
 	public WektoryRoznejDlugosciException(int dlA, int dlB) {
-		super("Wektory maj¹ ró¿ne d³ugoœci");
+		super("Wektory majÂ¹ rÃ³Â¿ne dÂ³ugoÅ“ci");
 		this.dlA = dlA;
 		this.dlB = dlB;
 	}
@@ -31,7 +29,7 @@ public class zad5 {
 				try {
 					C = addVec(A, B);
 				} catch(WektoryRoznejDlugosciException e) {
-					System.out.println("B³¹d: " + e.getMessage() + " " + e.dlA + " != " + e.dlB);
+					System.out.println("BÂ³Â¹d: " + e.getMessage() + " " + e.dlA + " != " + e.dlB);
 					System.out.println("Podaj ponownie wektory.");
 					w = true;
 				}
@@ -40,7 +38,7 @@ public class zad5 {
 			rd.close();
 			isr.close();
 		} catch(IOException e) {
-			System.out.println("B³¹d IO :( " + e.getLocalizedMessage());
+			System.out.println("BÂ³Â¹d IO :( " + e.getLocalizedMessage());
 		}
 		System.out.println("Gotowe");
 	}
