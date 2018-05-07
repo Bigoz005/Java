@@ -7,21 +7,21 @@ public class Main {
 
 	
 	public static void main(String[] args) {
+		
 	Gameplay game= new Gameplay();
-	JFrame frame = new JFrame();
-	frame.setTitle("Arkanoid");
-	frame.setBounds(10,10,700,600);
-	frame.setResizable(false);
-	frame.setLocationRelativeTo(null);
-	frame.setVisible(true);
-	frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-	frame.add(game);
+	JFrame obj = new JFrame();
+	
+	Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+	obj.setLocation(dim.width/2-obj.getSize().width/2, dim.height/2-obj.getSize().height/2);
+	obj.setBounds(10,10,710,630);
+	obj.setResizable(false);
+	obj.setLocationRelativeTo(null);
+	obj.setVisible(true);
+	obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	obj.add(game);
 	
 	
-	game.setSize(frame.getSize());
-	
-	
-	
+	game.setSize(obj.getSize());
 	
 	}
 	
